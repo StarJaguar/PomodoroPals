@@ -1,0 +1,256 @@
+html, body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(6, 155, 6);
+}
+
+/****** CONTAINER 1 (Header Logo/Links) ******/
+
+.container-one {
+    background: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo {
+    color: lightgreen;
+    font-size: 18px;
+    margin-right: 175px;
+}
+
+.timer-settings {
+    background: grey;
+    padding: 8px;
+    border-radius: 10px;
+
+    color: black;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.flash-settings {
+    background: grey;
+    padding: 8px;
+    border-radius: 10px;
+
+    color: black;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.notes-settings {
+    background: grey;
+    padding: 8px;
+    border-radius: 10px;
+
+    color: black;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.login {
+    background: grey;
+    padding: 8px;
+    border-radius: 10px;
+
+    color: black;
+    font-size: 18px;
+}
+
+/****** CONTAINER 2 (Timer) ******/
+
+.container-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-container {
+    background: darkgreen;
+    height: 300px;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 4px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer {
+    color: white;
+    font-size: 100px;
+}
+
+/****** CONTAINER 3 (TIME SELECT + START BUTTOM) ******/
+
+.container-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.short-break {
+    color: white;
+    font-size: 24px;
+    margin-right: 25px;
+
+    background: darkgreen;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.long-break {
+    color: white;
+    font-size: 24px;
+    margin-right: 25px;
+
+    background: darkgreen;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.start {
+    color: white;
+    font-size: 24px;
+
+    background: darkgreen;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/****** CONTAINER 4 (Flash Cards) ******/
+
+.container-four {
+    background: black;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.flash-cards {
+    color: white;
+    font-size: 26px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.card-one, .card-two, .card-three, .card-four, .card-five, .card-six,
+.card-seven, .card-eight, .card-nine, .card-ten {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.term, .term-two, .term-three, .term-four, .term-five, .term-six,
+.term-seven, .term-eight, .term-nine, .term-ten {
+    width: 150px;
+}
+
+/*.def, .def-two, .def-three, .def-four, .def-five, .def-six, .def-seven,
+.def-eight, .def-nine, .def-ten {
+    
+}*/
+
+.submit-cards {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+/****** CONTAINER 5 (Notes) ******/
+
+.container-five {
+    height: 300px;
+}
+
+.notes {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.note-one, .note-two, .note-three, .note-four, .note-five {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.submit-notes {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+/****** Registration and Login Pages ******/
+
+.register-page, .login-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.register-portion, .login-portion {
+    background: darkgreen;
+    width: 600px;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.register-header, .login-header {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.register-container, .login-container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    color: white;
+}
+
+.submit-register-container, .submit-login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.register-button, .login-button {
+    color: white;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background: darkgreen;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.registration-check-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.not-registered {
+    color: white;
+    background: darkgreen;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 5px;
+}
