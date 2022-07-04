@@ -1,16 +1,18 @@
-// https://freshman.tech/pomodoro-timer/
+
 // script.js
 
 // timer variable with properties containing duration of timer, breaks, and interval
 const timer = {
     pomodoro: 25,
-    shortBreak: 5,
+    shortBreak: 5,              
     longBreak: 15,
     longBreakInterval: 4,
+    sessions: 0,    // sessions will increment up to 4 before the long break starts
 };
 
 let interval;
 
+// start button functionality
 const mainButton = document.getElementById('js-btn');
 mainButton.addEventListener('click', () => {
   const { action } = mainButton.dataset;
@@ -44,9 +46,14 @@ function getRemainingTime(endTime) {
   }
 
 function startTimer() {
+    // get total time and end time
     let { total } = timer.remainingTime;
     const endTime = Date.parse(new Date()) + total * 1000;
+
+    // check session number and increment
+    if (timer.mode === 'pomodoro') timer.sessions++;
   
+    // button changes to 'stop' when 'start' is pressed
     mainButton.dataset.action = 'stop';
     mainButton.textContent = 'stop';
     mainButton.classList.add('active');
@@ -58,13 +65,29 @@ function startTimer() {
       total = timer.remainingTime.total;
       if (total <= 0) {
         clearInterval(interval);
+
+        // rotate between short break, long break, or pomodoro as sessions increment
+        switch (timer.mode) {
+            case 'pomodoro':
+              if (timer.sessions % timer.longBreakInterval === 0) {
+                switchMode('longBreak');
+              } else {
+                switchMode('shortBreak');
+              }
+              break;
+            default:
+              switchMode('pomodoro');
+          }
+    
+          startTimer();
       }
     }, 1000);
 }
 
 function stopTimer() {
-    clearInterval(interval);
+    clearInterval(interval);    // pause countdown
 
+    // change button to 'start'
     mainButton.dataset.action = 'start';
     mainButton.textContent = 'start';
     mainButton.classList.remove('active');
