@@ -8,9 +8,16 @@
     <title>Pomodoro Pal Login</title>
 </head>
 <body>
-    <div class="login-page">
-        <div class="login-portion">
 
+    <div class="login-page">
+
+        <div class="navigation-bar">
+            <button id="js-logo" class="logo">Pomodoro Pal</button>
+            <button id="js-login" class="login">Login</button>
+            <button id="js-register" class="register">Register</button>
+        </div>  
+
+        <div class="login-portion">
             <h1 class="login-header">
                 Pomodoro Pal Login
             </h1>
@@ -21,7 +28,6 @@
                         <td> Email Address: </td> 
                         <td> <input type="text" email=""> </td> 
                     </tr>
-
                     <tr class="login-password">
                         <td> Password: </td> 
                         <td> <input type="Password" name=""> </td> 
@@ -32,13 +38,25 @@
         </div>
     </div>
 
-    <div class="submit-login-container">
-        <strong class="login-button">Login</strong>
-    </div>
+    <script>
 
-    <div class="registration-check-container">
-        <a class="not-registered" href="registration.html">Click here to sign up</a>
-    </div> 
+        /****** Navigation Bar ******/
 
+        const logo = document.getElementById('js-logo');
+        logo.addEventListener('click', () => {
+        location.href = 'index.html';
+        });
+
+        const login = document.getElementById('js-login');
+        login.addEventListener('click', () => {
+            location.href = 'login.html';
+        });
+
+        const register = document.getElementById('js-register');
+        register.addEventListener('click', () => {
+            location.href = 'registration.html';
+        });
+
+    </script>
 </body>
 </html>

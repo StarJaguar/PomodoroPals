@@ -151,6 +151,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /****** Navigation Bar ******/
 
+const logo = document.getElementById('js-logo');
+logo.addEventListener('click', () => {
+  location.href = 'index.html';
+});
+
 const login = document.getElementById('js-login');
 login.addEventListener('click', () => {
     location.href = 'login.html';

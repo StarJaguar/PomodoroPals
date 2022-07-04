@@ -35,8 +35,17 @@ body {
 }
 
 .logo {
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #4a4a48;
     color: var(--pomodoro);
     font-weight: bold;
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
 }
 
 .login {
@@ -139,4 +148,6 @@ button:focus, button:active {
       font-size: 8rem;
     }
 }
+
+/* Login Page */
 
