@@ -16,6 +16,8 @@ mainButton.addEventListener('click', () => {
   const { action } = mainButton.dataset;
   if (action === 'start') {
     startTimer();
+  } else {
+    stopTimer();
   }
 });
 
@@ -60,6 +62,14 @@ function startTimer() {
     }, 1000);
 }
 
+function stopTimer() {
+    clearInterval(interval);
+
+    mainButton.dataset.action = 'start';
+    mainButton.textContent = 'start';
+    mainButton.classList.remove('active');
+}
+
 // gives the timer extra zeroes so that minutes and seconds each have two zeroes
 function updateClock() {
     const { remainingTime } = timer;
@@ -100,6 +110,7 @@ function handleMode(event) {
     if (!mode) return;
   
     switchMode(mode);
+    stopTimer();
   }
 
 document.addEventListener('DOMContentLoaded', () => {
