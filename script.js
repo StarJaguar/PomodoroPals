@@ -13,14 +13,16 @@ const timer = {
 let interval;
 
 // start button functionality
+const buttonSound = new Audio('chime-sound.mp3');
 const mainButton = document.getElementById('js-btn');
 mainButton.addEventListener('click', () => {
-  const { action } = mainButton.dataset;
-  if (action === 'start') {
-    startTimer();
-  } else {
-    stopTimer();
-  }
+    buttonSound.play();
+    const { action } = mainButton.dataset;
+    if (action === 'start') {
+        startTimer();
+    } else {
+        stopTimer();
+    }
 });
 
 // detects a click of any of the mode buttons. 
@@ -78,7 +80,9 @@ function startTimer() {
             default:
               switchMode('pomodoro');
           }
-    
+          
+          document.querySelector(`[data-sound="${timer.mode}"]`).play();
+
           startTimer();
       }
     }, 1000);
