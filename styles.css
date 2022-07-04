@@ -151,3 +151,54 @@ button:focus, button:active {
 
 /* Login Page */
 
+.login-portion {
+    margin-top: 10px;
+}
+
+.login-header {
+    text-align: center;
+    font-size: 36px;
+    height: 28px;
+    box-shadow: none;
+    font-weight: bold;
+    color: black;
+    border: 2px solid transparent;
+    margin: 0px;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.login-email, .login-password {
+    font-weight: bold;
+}
+
+.login-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#login-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 18px;
+    height: 30px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    background-color: white;
+    border-width: initial;
+    border-style: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+}
