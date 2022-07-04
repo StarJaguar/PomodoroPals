@@ -1,6 +1,8 @@
 
 // script.js
 
+/******  Timer Feature  ******/
+
 // timer variable with properties containing duration of timer, breaks, and interval
 const timer = {
     pomodoro: 25,
@@ -145,4 +147,16 @@ function handleMode(event) {
 
 document.addEventListener('DOMContentLoaded', () => {
     switchMode('pomodoro');
+});
+
+/****** Navigation Bar ******/
+
+const login = document.getElementById('js-login');
+login.addEventListener('click', () => {
+    location.href = 'login.html';
+});
+
+const register = document.getElementById('js-register');
+register.addEventListener('click', () => {
+    location.href = 'registration.html';
 });
