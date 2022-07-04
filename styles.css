@@ -15,8 +15,8 @@ html {
 
 :root {
     --pomodoro: #5ebe44;
-    --shortBreak: #c7ddcc;
-    --longBreak: #75c9b7;
+    --shortBreak: #0da955;
+    --longBreak: #5ec992;
 }
 
 body {
@@ -60,9 +60,15 @@ progress::-webkit-progress-value {
     margin-right: 20px;
     border-radius: 4px;
     padding: 4px;
-    background-color: #4a4a48;
+    background-color: black;
     color: var(--pomodoro);
     font-weight: bold;
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
 }
 
 .register {
@@ -71,6 +77,12 @@ progress::-webkit-progress-value {
     background-color: #4a4a48;
     color: var(--pomodoro);
     font-weight: bold;
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
 }
 
 .timer {
@@ -97,13 +109,35 @@ progress::-webkit-progress-value {
     height: 28px;
     cursor: pointer;
     box-shadow: none;
-    font-weight: 300;
-    color: #fff;
-    border: 1px solid transparent;
+    font-weight: bold;
+    color: black;
+    border: 2px solid transparent;
     margin: 0px;
     border-radius: 4px;
     padding: 2px 12px;
     background: none;
+}
+
+.mode-button.active {
+    border-color: black;
+}
+  
+.main-button {
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    border-width: initial;
+    border-style: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
 }
 
 button:focus, button:active {
