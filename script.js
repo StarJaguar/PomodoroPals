@@ -103,6 +103,9 @@ function updateClock() {
     const sec = document.getElementById('js-seconds');
     min.textContent = minutes;
     sec.textContent = seconds;
+
+    const text = timer.mode === 'pomodoro' ? 'Time to work!' : 'Break time!';
+    document.title = `${minutes}:${seconds} — ${text}`;
 }
 
 // mode could be pomodoro, shortBreak, or longBreak
