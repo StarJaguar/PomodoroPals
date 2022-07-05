@@ -1,4 +1,4 @@
-# PomodoroPals
+# Pomodoro Pal
 
 
 This project is aimed at creating a website that helps the user manage their time. It will implement the pomodoro technique and allow the user toe create their own notes and flashcards.
