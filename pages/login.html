@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Pomodoro Pal Registration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Pomodoro Pal Login</title>
 </head>
 <body>
 
-    <div class="register-page">
+    <div class="login-page">
 
         <div class="navigation-bar">
             <button id="js-logo" class="logo">Pomodoro Pal</button>
@@ -17,51 +17,31 @@
             <button id="js-register" class="register">Register</button>
         </div>  
 
-        <div class="register-portion">
+        <div class="login-portion">
 
-            <h1 class="register-header">
-                Account Registration
+            <h1 class="login-header">
+                Account Login
             </h1>
 
-            <form class="register-container">
+            <form class="login-container">
                 <table>
-
-                    <tr class="first-name">
-                        <td> First Name: </td>
-                        <td> <input type="text" first-name=""> </td>
-                    </tr>
-
-                    <tr class="last-name">
-                        <td> Last Name: </td>
-                        <td> <input type="text" last-name=""> </td>
-                    </tr>
-
-                    <tr class="user-name">
-                        <td> Username: </td>
-                        <td> <input type="text" user-name=""> </td>
-                    </tr>
-
-                    <tr class="email"> 
+                    <tr class="login-email"> 
                         <td> Email Address: </td> 
                         <td> <input type="text" email=""> </td> 
                     </tr>
-
-                    <tr class="password">
+                    <tr class="login-password">
                         <td> Password: </td> 
                         <td> <input type="Password" name=""> </td> 
                     </tr>
-                    <tr class="password-confirm">
-                        <td> Re-enter Password: </td>
-                        <td> <input type="Password" name=""> </td>
-                    </tr>
-
                 </table>
+
             </form>
 
+            <div class="login-btn-container">
+                <button id="login-btn">Login</button>
+            </div>
+
         </div>
-    </div>
-    <div class="submit-register-container">
-        <button class="register-button">Register</button>
     </div>
 
     <script>
@@ -70,7 +50,7 @@
 
         const logo = document.getElementById('js-logo');
         logo.addEventListener('click', () => {
-        location.href = 'index.html';
+        location.href = '../index.html';
         });
 
         const login = document.getElementById('js-login');

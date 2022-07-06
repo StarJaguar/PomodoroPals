@@ -15,7 +15,7 @@ const timer = {
 let interval;
 
 // start button functionality
-const buttonSound = new Audio('chime-sound.mp3');
+const buttonSound = new Audio('sounds/chime-sound.mp3');
 const mainButton = document.getElementById('js-btn');
 mainButton.addEventListener('click', () => {
     buttonSound.play();
@@ -158,10 +158,10 @@ logo.addEventListener('click', () => {
 
 const login = document.getElementById('js-login');
 login.addEventListener('click', () => {
-    location.href = 'login.html';
+    location.href = './pages/login.html';
 });
 
 const register = document.getElementById('js-register');
 register.addEventListener('click', () => {
-    location.href = 'registration.html';
+    location.href = './pages/registration.html';
 });
