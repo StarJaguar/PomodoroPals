@@ -48,6 +48,48 @@ body {
     background: none;
 }
 
+.timers {
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #4a4a48;
+    color: var(--pomodoro);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
+}
+
+.flash-cards{
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #4a4a48;
+    color: var(--pomodoro);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
+}
+
+.notes {
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #4a4a48;
+    color: var(--pomodoro);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
+}
+
 .login {
     margin-left: 300px;
     margin-right: 20px;

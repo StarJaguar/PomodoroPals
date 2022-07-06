@@ -13,6 +13,9 @@
 
         <div class="navigation-bar">
             <button id="js-logo" class="logo">Pomodoro Pal</button>
+            <button id="js-timers" class="timers">Manage Timers</button>
+            <button id="js-flash-cards" class="flash-cards">Manage Flash Cards</button>
+            <button id="js-notes" class="notes">Manage Notes</button>
             <button id="js-login" class="login">Login</button>
             <button id="js-register" class="register">Register</button>
         </div>  
@@ -71,6 +74,21 @@
         const logo = document.getElementById('js-logo');
         logo.addEventListener('click', () => {
         location.href = '../index.html';
+        });
+
+        const timers = document.getElementById('js-timers');
+        timers.addEventListener('click', () => {
+        location.href = 'timers.html';
+        });
+
+        const flashcards = document.getElementById('js-flash-cards');
+        flashcards.addEventListener('click', () => {
+        location.href = 'flash-cards.html';
+        });
+
+        const notes = document.getElementById('js-notes');
+        notes.addEventListener('click', () => {
+        location.href = 'notes.html';
         });
 
         const login = document.getElementById('js-login');

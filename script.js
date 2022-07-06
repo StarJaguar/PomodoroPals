@@ -156,6 +156,21 @@ logo.addEventListener('click', () => {
   location.href = 'index.html';
 });
 
+const timers = document.getElementById('js-timers');
+timers.addEventListener('click', () => {
+  location.href = './pages/timers.html';
+})
+
+const flashcards = document.getElementById('js-flash-cards');
+flashcards.addEventListener('click', () => {
+  location.href = './pages/flash-cards.html';
+})
+
+const notes = document.getElementById('js-notes');
+  notes.addEventListener('click', () => {
+  location.href = './pages/notes.html';
+});
+
 const login = document.getElementById('js-login');
 login.addEventListener('click', () => {
     location.href = './pages/login.html';
