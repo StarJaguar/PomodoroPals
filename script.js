@@ -145,10 +145,6 @@ function handleMode(event) {
     stopTimer();
   }
 
-document.addEventListener('DOMContentLoaded', () => {
-    switchMode('pomodoro');
-});
-
 /****** Navigation Bar ******/
 
 const logo = document.getElementById('js-logo');
@@ -179,4 +175,10 @@ login.addEventListener('click', () => {
 const register = document.getElementById('js-register');
 register.addEventListener('click', () => {
     location.href = './pages/registration.html';
+});
+
+/****** Load DOM content on swithchMode ******/
+
+document.addEventListener('DOMContentLoaded', () => {
+  switchMode('pomodoro');
 });
