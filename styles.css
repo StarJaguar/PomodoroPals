@@ -191,13 +191,6 @@ button:focus, button:active {
     }
 }
 
-/*.about-container {
-    position: relative;
-    background: black;
-    height: 600px;
-    transform: translateY(600px);
-}*/
-
 /****** Login/Registration Pages ******/
 
 .login-portion {
