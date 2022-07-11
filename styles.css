@@ -185,12 +185,6 @@ button:focus, button:active {
     outline: none;
 }
 
-@media screen and (max-width: 550px) {
-    .clock {
-      font-size: 8rem;
-    }
-}
-
 /****** Login/Registration Pages ******/
 
 .login-portion {
@@ -237,4 +231,12 @@ button:focus, button:active {
     padding-right: 5px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+/****** Media types and devices ******/
+
+@media screen and (max-width: 550px) {
+    .clock {
+      font-size: 8rem;
+    }
 }
