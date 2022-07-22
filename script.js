@@ -159,7 +159,8 @@ timers.addEventListener('click', () => {
 
 const flashcards = document.getElementById('js-flash-cards');
 flashcards.addEventListener('click', () => {
-  location.href = './pages/flash-cards.html';
+  window.open('./pages/flash-cards.html', '_blank');
+  //location.href = './pages/flash-cards.html';
 })
 
 const notes = document.getElementById('js-notes');

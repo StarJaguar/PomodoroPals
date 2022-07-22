@@ -233,6 +233,10 @@ button:focus, button:active {
     border-radius: 5px;
 }
 
+/****** Flashcards ******/
+
+
+
 /****** Media types and devices ******/
 
 @media screen and (max-width: 550px) {
