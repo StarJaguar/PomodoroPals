@@ -52,15 +52,15 @@ function addFlashcard() {
 }
 
 function delFlashcards() {
-  localStorage.clear();
-  flashcards.innerHTML = '';
-  contentArray = [];
+    localStorage.clear();
+    flashcards_.innerHTML = '';
+    contentArray = [];
 }
 
 function showCreateCardBox() {
-  createBox.style.display = "block";
+    createBox.style.display = "block";
 }
 
 function hideCreateBox() {
-  createBox.style.display = "none";
+    createBox.style.display = "none";
 }

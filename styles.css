@@ -235,6 +235,10 @@ button:focus, button:active {
 
 /****** Flashcards ******/
 
+.flashcard-page {
+    background: var(--pomodoro);
+}
+
 .flash-btns {
     padding: 8px;
     outline: none;
@@ -259,7 +263,10 @@ button:focus, button:active {
     width: 100%;
     margin: auto;
     padding: 20px 0;
-    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: var(--pomodoro);
 }
 
 .create-box {
