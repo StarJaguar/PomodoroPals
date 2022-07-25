@@ -283,7 +283,7 @@ button:focus, button:active {
     width: fit-content;
 }
 
-.flashcards {
+.flashcards_ {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
