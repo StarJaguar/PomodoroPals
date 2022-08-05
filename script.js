@@ -1,6 +1,13 @@
 
 // script.js
 
+const flashcards_ = document.getElementsByClassName("flashcards_")[0];
+const createBox = document.getElementsByClassName("create-box")[0];
+const question = document.getElementById("question");
+const answer = document.getElementById("answer");
+let contentArray = localStorage.getItem('items') ?
+JSON.parse(localStorage.getItem('items')) : [];
+
 /******  Timer Feature  ******/
 
 // timer variable with properties containing duration of timer, breaks, and interval
@@ -180,12 +187,7 @@ register.addEventListener('click', () => {
 
 /****** Flashcards ******/
 
-const flashcards_ = document.getElementsByClassName("flashcards_")[0];
-const createBox = document.getElementsByClassName("create-box")[0];
-const question = document.getElementById("question");
-const answer = document.getElementById("answer");
-let contentArray = localStorage.getItem('items') ?
-JSON.parse(localStorage.getItem('items')) : [];
+
 
 contentArray.forEach(divMaker);
 function divMaker(text) {
@@ -233,7 +235,7 @@ function addFlashcard() {
 
 function delFlashcards() {
   localStorage.clear();
-  flashcards.innerHTML = '';
+  flashcards_.innerHTML = '';
   contentArray = [];
 }
 

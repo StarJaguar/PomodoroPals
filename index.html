@@ -41,47 +41,45 @@
 
         </div>
 
-        <header>
-            <div class="flashcards-container">
-                <div class="flashcard-nav">
-                    <h1 class="flashcards-header">Flashcards</h1>
-                    <div class="flash-nav-btn-container">
-                        <button class="flash-btns" id="new-card" onclick="showCreateCardBox()">
-                        New Card</button>
-                        <button class="flash-btns" id="del-cards" onclick="delFlashcards()">
-                        Del Cards</button>
-                    </div>
-                </div>
-            </div>
-        </header>
-    
-        <div class="flashcards-container">
-            <div class="create-box">
-                <h2 style="text-align: center; color: black;">
-                Create Flashcard</h2>
-                <label for="question">Questions</label>
-                <textarea id="question"></textarea>
-                <br>
-                <label for="answer">Answer</label>
-                <textarea id="answer"></textarea>
-    
-                <div>
-                    <button class="flash-btns" onclick="addFlashcard()">Save</button>
-                    <button class="flash-btns" onclick="hideCreateBox()">Close</button>
-                </div>
-            </div>
-    
-            <div class="flashcards_"></div>
-        </div>
-
-
-
     </main>
 
     <div class="hidden">
         <audio src="./sounds/chime-sound.mp3" data-sound="pomodoro"></audio>
         <audio src="./sounds/break-chime.mp3" data-sound="shortBreak"></audio>
         <audio src="./sounds/break-chime.mp3" data-sound="longBreak"></audio>
+    </div>
+
+    <header>
+        <div class="flashcards-container">
+            <div class="flashcard-nav">
+                <h1 class="flashcards-header">Flashcards</h1>
+                <div class="flash-nav-btn-container">
+                    <button class="flash-btns" id="new-card" onclick="showCreateCardBox()">
+                    New Card</button>
+                    <button class="flash-btns" id="del-cards" onclick="delFlashcards()">
+                    Del Cards</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flashcards-container">
+        <div class="create-box">
+            <h2 style="text-align: center; color: black;">
+            Create Flashcard</h2>
+            <label for="question">Questions</label>
+            <textarea id="question"></textarea>
+            <br>
+            <label for="answer">Answer</label>
+            <textarea id="answer"></textarea>
+
+            <div>
+                <button class="flash-btns" onclick="addFlashcard()">Save</button>
+                <button class="flash-btns" onclick="hideCreateBox()">Close</button>
+            </div>
+        </div>
+
+        <div class="flashcards_"></div>
     </div>
 
     <script src="script.js"></script> 
