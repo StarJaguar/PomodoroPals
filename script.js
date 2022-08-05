@@ -245,6 +245,8 @@ function hideCreateBox() {
   createBox.style.display = "none";
 }
 
+
+
 /****** Load DOM content on swithchMode ******/
 
 document.addEventListener('DOMContentLoaded', () => {

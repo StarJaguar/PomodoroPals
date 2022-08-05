@@ -46,6 +46,7 @@ body {
     border-radius: 4px;
     padding: 2px 12px;
     background: none;
+    margin-right: 400px;
 }
 
 .timers {
@@ -260,7 +261,7 @@ button:focus, button:active {
 
 .flashcard-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 50%;
     margin: auto;
     margin-top: 450px;
@@ -289,6 +290,14 @@ button:focus, button:active {
 
 .create-box button {
     width: fit-content;
+}
+
+.flashcards-header {
+    margin-right: 300px;
+}
+
+.flash-nav-btn-container {
+    display: flex;
 }
 
 .flashcards_ {

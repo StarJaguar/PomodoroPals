@@ -13,11 +13,7 @@
 
         <div class="navigation-bar">
             <button id="js-logo" class="logo">Pomodoro Pal</button>
-            <button id="js-timers" class="timers">Manage Timers</button>
-            <button id="js-flash-cards" class="flash-cards">Flashcards</button>
-            <button id="js-notes" class="notes">Manage Notes</button>
-            <button id="js-login" class="login">Login</button>
-            <button id="js-register" class="register">Register</button>
+            <button id="js-timers" class="timers">Timers</button>
         </div>  
 
         <div class="timer">
@@ -48,11 +44,11 @@
         <header>
             <div class="flashcards-container">
                 <div class="flashcard-nav">
-                    <h1>Flashcards</h1>
-                    <div>
-                        <button class="flash-btns" onclick="showCreateCardBox()">
+                    <h1 class="flashcards-header">Flashcards</h1>
+                    <div class="flash-nav-btn-container">
+                        <button class="flash-btns" id="new-card" onclick="showCreateCardBox()">
                         New Card</button>
-                        <button class="flash-btns" onclick="delFlashcards()">
+                        <button class="flash-btns" id="del-cards" onclick="delFlashcards()">
                         Del Cards</button>
                     </div>
                 </div>
@@ -78,6 +74,8 @@
             <div class="flashcards_"></div>
         </div>
 
+
+
     </main>
 
     <div class="hidden">
@@ -87,6 +85,6 @@
     </div>
 
     <script src="script.js"></script> 
-    <script src="flash-cards.js"></script>
+    
 </body>
 </html>
