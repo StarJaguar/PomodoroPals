@@ -1,6 +1,7 @@
 
 // script.js
 
+// flashcard functionality variables
 const flashcards_ = document.getElementsByClassName("flashcards_")[0];
 const createBox = document.getElementsByClassName("create-box")[0];
 const question = document.getElementById("question");
@@ -164,30 +165,7 @@ timers.addEventListener('click', () => {
   location.href = './pages/timers.html';
 })
 
-const flashcards = document.getElementById('js-flash-cards');
-flashcards.addEventListener('click', () => {
-  window.open('./pages/flash-cards.html', '_blank');
-  //location.href = './pages/flash-cards.html';
-})
-
-const notes = document.getElementById('js-notes');
-  notes.addEventListener('click', () => {
-  location.href = './pages/notes.html';
-});
-
-const login = document.getElementById('js-login');
-login.addEventListener('click', () => {
-    location.href = './pages/login.html';
-});
-
-const register = document.getElementById('js-register');
-register.addEventListener('click', () => {
-    location.href = './pages/registration.html';
-});
-
 /****** Flashcards ******/
-
-
 
 contentArray.forEach(divMaker);
 function divMaker(text) {
@@ -246,8 +224,6 @@ function showCreateCardBox() {
 function hideCreateBox() {
   createBox.style.display = "none";
 }
-
-
 
 /****** Load DOM content on swithchMode ******/
 
