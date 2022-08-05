@@ -63,71 +63,18 @@ body {
     background: none;
 }
 
-.flash-cards{
-    border-radius: 4px;
-    padding: 4px;
-    background-color: #4a4a48;
-    color: var(--pomodoro);
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: none;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    padding: 2px 12px;
-    background: none;
-}
-
-.notes {
-    border-radius: 4px;
-    padding: 4px;
-    background-color: #4a4a48;
-    color: var(--pomodoro);
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: none;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    padding: 2px 12px;
-    background: none;
-}
-
-.login {
-    margin-left: 300px;
-    margin-right: 20px;
-    border-radius: 4px;
-    padding: 4px;
-    background-color: black;
-    color: var(--pomodoro);
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: none;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    padding: 2px 12px;
-    background: none;
-}
-
-.register {
-    border-radius: 4px;
-    padding: 4px;
-    background-color: #4a4a48;
-    color: var(--pomodoro);
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: none;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    padding: 2px 12px;
-    background: none;
-}
-
 .timer {
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 30px;
+    border-radius: 25px;
     text-align: center;
+    background: lightgreen;
 }
 
 .clock {
@@ -236,10 +183,6 @@ button:focus, button:active {
 
 /****** Flashcards ******/
 
-.flashcard-page {
-    background: var(--pomodoro);
-}
-
 .flash-btns {
     padding: 8px;
     outline: none;
@@ -262,7 +205,9 @@ button:focus, button:active {
 .flashcard-nav {
     display: flex;
     justify-content: center;
-    width: 50%;
+    align-items: center;
+    width: 75%;
+    height: 50px;
     margin: auto;
     margin-top: 450px;
     padding: 20px 0;
