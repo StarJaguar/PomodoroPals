@@ -246,6 +246,7 @@ button:focus, button:active {
     border: 1px solid lightgray;
     border-radius: 5px;
     background-color: whitesmoke;
+    margin-top: 5px;
 }
 
 .flash-btns:hover {
@@ -260,13 +261,13 @@ button:focus, button:active {
 .flashcard-nav {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
     margin: auto;
+    margin-top: 450px;
     padding: 20px 0;
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 10px;
-    background-color: var(--pomodoro);
 }
 
 .create-box {
